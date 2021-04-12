@@ -83,7 +83,6 @@ nav a {
 .intro-flex-container {
     margin-top: 69px;
     display: flex;
-    overflow: hidden;
 }
 
 .intro-image-container {
@@ -93,11 +92,17 @@ nav a {
     margin: 32px 24px 32px 24px;
 }
 
+.intro-image-container img{
+    display: block;
+    width: 100%;
+} 
+
 .intro-word-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 24px;
+    width: 40%;
 }
 
 .button {
@@ -107,6 +112,36 @@ nav a {
     text-align: center;
     color: white;
 }
+
+@media only screen and (max-width: 700px) {
+
+    .intro-flex-container {
+        margin-top: 69px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .intro-image-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .intro-word-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0px;
+        width: 100%;
+        padding: 16px 24px;
+    }
+
+    
+
+}
+
 
 
 /* Blog Session */
@@ -155,12 +190,15 @@ nav a {
 
 .blog-box-container:last-child {
     border-bottom: none;
-    
     background-color: lightgray;
 }
 
 .blog-box-image-container {
     width: 35%;
+}
+
+.blog-box-image-container .mobile {
+    display: none;
 }
 
 .blog-box-image-container img {
@@ -175,6 +213,57 @@ nav a {
     width: 65%;
     padding: 0 20px;
 }
+
+
+@media only screen and (max-width: 700px) {
+
+    .blog-left-container {
+        display: none;
+    }
+
+    .blog-right-container {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+
+    .blog-box-container {
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .blog-box-container:first-child {
+        padding-top: 16px;
+    }
+    
+    .blog-box-container:last-child {
+        border-bottom: 2px solid darkgray;
+        background-color: whitesmoke;
+    }
+
+    .blog-box-image-container .desktop {
+        display: none;
+    }
+
+    .blog-box-image-container .mobile {
+        display: flex;
+    }
+
+    .blog-box-image-container {
+        width: 100%;
+    }
+
+    .blog-box-word-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 32px 16px;
+    }
+}
+
 
 
 /* Card Session */
@@ -215,6 +304,38 @@ nav a {
     background-color: white;
     padding: 16px 16px 24px 16px;
 }
+
+@media only screen and (max-width: 700px) {
+    
+    .learncard-card-img-container {
+        display: none;
+    }
+
+    .learncard-card-word-container p {
+        display: none;
+    }
+
+    .learncard-row {
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learncard-card {
+        margin: 8px;
+    }
+
+    .learncard-card-word-container h5 {
+        margin: 0;
+    }
+
+    .learncard-card-word-container {
+        background-color: lightgrey;
+        padding: 16px 16px 24px 16px;
+    }
+
+}
+
 
 
 /* Exhibit */
@@ -281,6 +402,33 @@ nav a {
     justify-content: center;
     padding-right: 16px;
 }
+
+
+@media only screen and (max-width: 700px) {
+    .exhibit-right-container {
+        display: none;
+    }
+
+    .exhibit-left-container h5,
+    .exhibit-left-container p {
+        display: none;
+    }
+
+    .exhibit-left-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+
+}
+
+
+
+
+
 
 
 
