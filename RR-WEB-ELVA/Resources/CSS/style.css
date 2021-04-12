@@ -285,7 +285,8 @@ nav a {
 }
 
 .learncard-card {
-    flex-basis: 33%;
+    /*flex-basis: 33%;*/
+    flex: 1;
     margin: 16px;
 }
 
