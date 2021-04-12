@@ -54,7 +54,7 @@ nav a {
     color: gray;
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 700px) {
     .flex-container-desktop-header {
         display: none;
     }
@@ -83,6 +83,7 @@ nav a {
 .intro-flex-container {
     margin-top: 69px;
     display: flex;
+    overflow: hidden;
 }
 
 .intro-image-container {
@@ -100,7 +101,7 @@ nav a {
 }
 
 .button {
-    width: 300px;
+    width: 100%;
     padding: .5rem 0;
     background-color: darkgray;
     text-align: center;
@@ -110,7 +111,7 @@ nav a {
 
 /* Blog Session */
 #blog {
-    background-color: seashell;
+    background-color: whitesmoke;
 }
 
 .blog-flex-container {
@@ -118,10 +119,9 @@ nav a {
 }
 
 .blog-left-container {
-    display: flex;
-    flex-direction: column;
     width: 60%;
-    margin: 32px 24px 32px 24px;
+    padding: 32px 24px 32px 24px;
+    border-right: 2px solid darkgray;
 }
 
 .blog-image-container {
@@ -129,24 +129,169 @@ nav a {
     flex-direction: column;
 }
 
-.blog-left-container h3 {
+.blog-left-container h2 {
     padding: 32px 0 24px 0;
+    font-weight: bold;
 }
+
 
 .blog-right-container {
+    display: flex;
+    flex-direction: column;
     width: 40%;
-    margin-right: 30px;
+    padding: 32px 0;
+}
+
+.blog-box-container {
+    border-bottom: 2px solid darkgray;
+    display: flex;
+    padding: 16px 0 16px 16px;
+}
+
+.blog-box-container:first-child {
+    padding-top: 0;
 }
 
 
+.blog-box-container:last-child {
+    border-bottom: none;
+    
+    background-color: lightgray;
+}
+
+.blog-box-image-container {
+    width: 35%;
+}
+
+.blog-box-image-container img {
+    display: block;
+    width: 100%;
+}
+
+.blog-box-word-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 0 20px;
+}
 
 
-/*
-#intro img {
+/* Card Session */
+#learncard {
+    background-color: thistle;
+    padding-bottom: 16px;
+}
+
+#learncard .learncard-title {
+    text-align: center;
+    padding: 32px 0;
+    margin-bottom: 0;
+}
+
+.learncard-row {
+    margin: 0 56px;
+    display: flex;
+    flex-direction: row;
+}
+
+.learncard-card {
+    flex-basis: 33%;
+    margin: 16px;
+}
+
+.learncard-card-img-container {
+    overflow: hidden;
+}
+
+.learncard-card-img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.learncard-card-word-container {
+    /*height: 60%;*/
+    background-color: white;
+    padding: 16px 16px 24px 16px;
+}
+
+
+/* Exhibit */
+.exhibit-flex-outer-container {
+    background-color: whitesmoke;
+}
+
+.exhibit-title {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.exhibit-flex-inner-container {
+    display: flex;
+}
+
+.exhibit-left-container {
     width: 60%;
-    margin: 32px 24px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 32px 24px;
 }
-*/
+
+.exhibit-video-container video {
+    display: block;
+    width: 100%;
+}
+
+.exhibit-left-container h5 {
+    margin: 24px 0 8px 0;
+}
+
+.exhibit-right-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.exhibit-box-container {
+    display: flex;
+}
+
+.exhibit-box-container:first-child {
+    background-color: lightgray;
+    display: flex;
+}
+
+.exhibit-box-image-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+.exhibit-box-image-container img {
+    display: block;
+    width: 100%;
+}
+
+.exhibit-box-word-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 16px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: whitesmoke;
+    border-top: 2px solid darkgray;
+    padding: 16px 24px;
+}
+
+
 
 
 
